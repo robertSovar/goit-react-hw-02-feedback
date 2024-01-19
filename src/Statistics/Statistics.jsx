@@ -58,7 +58,7 @@ export default class Statistics extends Component {
     const good = this.state.good;
     const total = this.countTotalFeedback();
     const percentage = (good / total) * 100;
-    return `${Math.ceil(percentage)}%`;
+    return `${Math.floor(percentage)}%`;
   }
 
   static propTypes = {
